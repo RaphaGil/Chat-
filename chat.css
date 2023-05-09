@@ -1,0 +1,244 @@
+#chat_icon{
+    position:fixed;
+    right: 30px;
+    bottom: 2%;
+    font-size: 50px;
+    cursor: pointer;
+    color: black;
+}
+#chat-box-container{
+ position:fixed;
+ right: 20px;
+ background: #dedede;
+ border-radius: 5%;
+ bottom: 10%;
+ width: 9cm;
+ height: 400px;
+ flex-shrink: 2;
+ overflow-y: auto;
+ padding-bottom: 50px;
+ z-index: 1;
+ box-shadow: 
+     inset 0 2rem 2rem -2rem rgba(black, 0.05),
+     inset 0 -2rem 2rem -2rem rgba(black, 0.05);
+}
+
+#messages_box{
+    position:fixed;
+    right: 20px;
+    background: #dedede;
+    border-radius: 5%;
+    bottom: 10%;
+    width: 9cm;
+    height: 400px;
+    display: grid; 
+    left: 2cm;
+
+}
+#logo{
+    background: pink;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    max-width: 500;
+    text-align: center;
+  }
+  #our-msg-inbox{
+    background-color: rgb(53, 231, 237);
+    border-radius: 15px;
+    float: left;
+    width: 5cm;
+    font-size: 12px;
+    padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+ 
+}
+#received-msg-inbox{
+    background-color:rgb(246, 235, 142);
+    border-radius: 15px;
+    float: right;
+    width: 5cm;
+    font-size: 14px;
+    top: 20%;
+    margin-bottom: 10px;
+}
+#received-msg-inbox-warrantyclaim,
+#received-msg-inbox-spareparts,
+#received-msg-inbox-technicalsupport,
+#received-msg-inbox-spreedsheets,
+#received-msg-inbox-price,
+#received-msg-inbox-delivery,
+#received-msg-inbox-question{ 
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+    width: 5cm;
+    background-color:rgb(246, 235, 142);
+    border-radius: 15px;
+    float: right;
+    margin-bottom: 10px;
+ 
+}
+#primeirapergunta{
+    background-color: rgb(53, 231, 237);
+    border-radius: 15px;
+    float: left;
+    width: 5cm;
+    font-size: 12px;
+    padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+
+  top:0;
+}
+
+.btn{
+    background-color: #007bff;
+    color: #fff;  
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+    width:100%;
+}
+
+#segundaPerguntaSupport{
+    background-color: rgb(53, 231, 237);
+    border-radius: 15px;
+    float: left;
+    width: 5cm;
+    font-size: 12px;
+    padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+#segundaPerguntaSales{
+    background-color: rgb(53, 231, 237);
+    border-radius: 15px;
+    float: left;
+    width: 5cm;
+    font-size: 12px;
+    padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+#delivery,
+#warrantyClaim,
+#SpareParts,
+#technicalSupport,
+#spreedSheet,
+#priceinfo,
+#question{
+    background-color: rgb(53, 231, 237);
+    border-radius: 15px;
+    float: left;
+    width: 5cm;
+    font-size: 12px;
+    padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+
+#segundaPerguntaSales{
+    background-color: rgb(53, 231, 237);
+    border-radius: 15px;
+    float: left;
+    width: 5cm;
+    font-size: 12px;
+    padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.btn1{
+    background-color: #007bff;
+    color: #fff;  
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+    width:50%;
+    display: block;
+   margin: 2.5px;
+
+}
+#input{
+    position: fixed;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    height: 7%;
+    max-width: 500;
+    bottom: 2.5cm;
+    font-size: 12px;
+    z-index: 2;
+
+ 
+  }
+#chat-input{
+    position: fixed;
+    border: 1px solid #ccc;
+    background-color:  white;
+    border-radius: 5px;
+    height: 5%;
+    width: 7cm;
+    bottom: 2.7cm;
+    font-size: 12px;
+    margin-top: 20px;
+    max-width: 500;
+    
+}
+#send-button {
+    position: fixed;
+    margin: 5px;
+    padding: 8px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: right;
+    margin-left: 280px;
+    margin-top: 10px;
+    margin-top: 20px;
+  
+  }
+  #questiontext{
+  
+    border: 1px solid #ccc;
+    background-color:  white;
+    border-radius: 5px;
+
+    
+}
+  #send-button2 {
+    padding: 4px 5px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+
+  }
