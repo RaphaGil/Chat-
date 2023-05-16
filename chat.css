@@ -6,21 +6,36 @@
     cursor: pointer;
     color: black;
 }
+#logo{
+
+}
 #chat-box-container{
  position:fixed;
  right: 20px;
  background: #dedede;
- border-radius: 5%;
- bottom: 10%;
+ border-top-left-radius: 5%;
+ border-top-right-radius: 5%;
+ bottom: 19%;
  width: 9cm;
- height: 400px;
+ height: 450px;
  flex-shrink: 2;
- overflow-y: auto;
- padding-bottom: 50px;
- z-index: 1;
+display: flex;
+flex-direction: column;
+margin-bottom: 0;
+
  box-shadow: 
      inset 0 2rem 2rem -2rem rgba(black, 0.05),
      inset 0 -2rem 2rem -2rem rgba(black, 0.05);
+     transform: scale(0);
+     transform-origin: bottom right;
+     transition: 1s;
+     overflow:scroll;
+  
+}
+
+#chat-box-container.show{
+  transform: scale(1);
+
 }
 
 #messages_box{
@@ -81,6 +96,7 @@
     border-radius: 15px;
     float: right;
     margin-bottom: 10px;
+    top:0;
  
 }
 #primeirapergunta{
@@ -94,7 +110,6 @@
   padding-bottom: 30px;
   padding-left: 20px;
   margin-bottom: 10px;
-
   top:0;
 }
 
@@ -108,7 +123,7 @@
     text-align: center;
     width:100%;
 }
-
+#segundaPerguntaSales,
 #segundaPerguntaSupport{
     background-color: rgb(53, 231, 237);
     border-radius: 15px;
@@ -122,18 +137,6 @@
   margin-bottom: 10px;
 }
 
-#segundaPerguntaSales{
-    background-color: rgb(53, 231, 237);
-    border-radius: 15px;
-    float: left;
-    width: 5cm;
-    font-size: 12px;
-    padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  margin-bottom: 10px;
-}
 
 #delivery,
 #warrantyClaim,
@@ -142,20 +145,6 @@
 #spreedSheet,
 #priceinfo,
 #question{
-    background-color: rgb(53, 231, 237);
-    border-radius: 15px;
-    float: left;
-    width: 5cm;
-    font-size: 12px;
-    padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  margin-bottom: 10px;
-}
-
-
-#segundaPerguntaSales{
     background-color: rgb(53, 231, 237);
     border-radius: 15px;
     float: left;
@@ -177,59 +166,59 @@
     padding: 5px;
     text-align: center;
     width:50%;
-    display: block;
-   margin: 2.5px;
+    margin: 2.5px;
 
 }
 #input{
-    position: fixed;
-    border: 1px solid #ccc;
-    background-color: white;
-    border-radius: 5px;
-    height: 7%;
-    max-width: 500;
-    bottom: 2.5cm;
-    font-size: 12px;
-    z-index: 2;
-
- 
+ background: #dedede;
+  position:fixed;
+  right: 20px;
+  border-radius: 5%;
+  bottom: 12%;
+  width: 9cm;
+  height: 2cm;
+    box-shadow: 
+    inset 0 2rem 2rem -2rem rgba(black, 0.05),
+    inset 0 -2rem 2rem -2rem rgba(black, 0.05);
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: 1s;
   }
+
+#input.show{
+  transform: scale(1);
+}
+
+
 #chat-input{
-    position: fixed;
+  position: fixed;
     border: 1px solid #ccc;
-    background-color:  white;
+
     border-radius: 5px;
-    height: 5%;
+    height: 1.5cm;
     width: 7cm;
-    bottom: 2.7cm;
     font-size: 12px;
-    margin-top: 20px;
-    max-width: 500;
-    
+    max-width: 500;  
+    bottom: 12%
 }
 #send-button {
-    position: fixed;
+  position: fixed;
     margin: 5px;
     padding: 8px 10px;
     background-color: #007bff;
     color: #fff;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 12px;
     text-align: right;
     margin-left: 280px;
-    margin-top: 10px;
-    margin-top: 20px;
-  
-  }
-  #questiontext{
-  
-    border: 1px solid #ccc;
-    background-color:  white;
-    border-radius: 5px;
+    bottom: 23%;
 
     
+  }
+  #questiontext{
+    position: fixed;
+    border-radius: 5px;
 }
   #send-button2 {
     padding: 4px 5px;
@@ -240,5 +229,6 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 12px;
+    overflow:scroll;x
 
   }
