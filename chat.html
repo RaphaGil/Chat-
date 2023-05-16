@@ -11,130 +11,102 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
+<header>
     <!--Chat Icon-->
     <div id="chat_icon">
     <i class="fa-regular fa-comments"></i>
     </div>
-    
+</header>
+
+<main>
     <!--Confi of the chat-->
     <div id="chat-box-container">
-        <div id="logo">
+        <section id="logo">
             <div id="picture">
-            <img src="">
+                <img src="" alt="Logo">
             </div>
             <div id="description">
                 <h4>Welcome to our chat!</h4>
             </div>
-        </div>
-        <div id="scroll">
-        <div id="our-msg-inbox">
+        </section>
+
+        <section id="scroll">
+             <div id="our-msg-inbox">
                 <h3>Welcome to our chat! How can I help you today?</h3>
-        </div>
-        <div id="received-msg-inbox"></div>
-      
-        <div id="received-msg-inbox-support"></div>
+            </div>
+            <div id="received-msg-inbox"></div>
+            <div id="received-msg-inbox-support"></div>
         
-
-
-        <div id="primeirapergunta" style="display:none">
-            <h3>Quais das opcoes a baixo voce precisa de ajuda?</h3>
-            <div style="display: flex; justify-content:space-around;">
-            <div pergum> 
-                <button class="btn">Sales</button>
-            </div>
-            <div pergum>
-                <button class="btn">Support</button>
-            </div>
-            </div>
-        </div> 
-    </div>   
-        
-        <div id="segundaPerguntaSupport" style="display:none">
-            <h3>Select the option that you would like help with:</h3>
-         
-            <div pergum> 
-            <button class="btn">Warranty Claim</button>
-            </div>
-        
-            <div pergum>
-                <button class="btn">Spare parts</button>
-            <div pergum>
-                    <button class="btn">Technical Support</button>
+            <section id="primeirapergunta" style="display:none">
+                <h3>Quais das opcoes a baixo voce precisa de ajuda?</h3>
+                <div style="display: flex; justify-content:space-around;">
+                    <button class="btn">Sales</button>
+                    <button class="btn">Support</button>
                 </div>
-            </div>
-            <div pergum>
-                <button class="btn">Spreed Sheets</button>
-            </div>
-        </div>
-        <div id="received-msg-inbox-warrantyclaim" style="display: none;"></div>
-        <div id="received-msg-inbox-spareparts" style="display: none;"></div>
-        <div id="received-msg-inbox-technicalsupport" style="display: none;"></div>
-        <div id="received-msg-inbox-spreedsheets" style="display: none;"></div>
-        <div id="received-msg-inbox-price" style="display: none;"></div>
+            </section> 
+        </section>   
+        
+            <section id="segundaPerguntaSupport" style="display:none">
+                <h3>Select the option that you would like help with:</h3>
+                    <button class="btn">Warranty Claim</button>
+                    <button class="btn">Spare parts</button>
+                    <button class="btn">Technical Support</button>
+                    <button class="btn">Spreed Sheets</button>
+               </section>
+        <section id="received-msg-inbox-warrantyclaim" style="display: none;"></section>
+        <section id="received-msg-inbox-spareparts" style="display: none;"></section>
+        <section id="received-msg-inbox-technicalsupport" style="display: none;"></section>
+        <section id="received-msg-inbox-spreedsheets" style="display: none;"></section>
+        <section id="received-msg-inbox-price" style="display: none;"></section>
 
    
-        <div id="segundaPerguntaSales" style="display:none">
+        <section id="segundaPerguntaSales" style="display:none">
             <h3>Select the option that you would like help with:</h3>
-            
-            <div pergum> 
                 <button class="btn">Price</button>
-            </div>
-            <div pergum>
                 <button class="btn">Delivery</button>
-            </div>
-            <div pergum>
-                    <button class="btn">Question</button>
-            </div>
-          
-        </div>
+                <button class="btn">Question</button>
+        </section>
     
-        
-        <div id="warrantyClaim" style="display: none;">
+         <section id="warrantyClaim" style="display: none;">
             <h3>Please contact us on warranty@kudox.com</h3>
-        </div>
+        </section>
 
-             
-        <div id="SpareParts"style="display: none;">
+        <section id="SpareParts"style="display: none;">
             <h3>Chose the option:</h3>
-            <button class="btn">Bracket set</button>
-            <button class="btn">Plugs</button>
-            <button class="btn">Top Grill</button>
-            <button class="btn">Side Panel</button>
-        </div>
-
+                <button class="btn">Bracket set</button>
+                <button class="btn">Plugs</button>
+                <button class="btn">Top Grill</button>
+                <button class="btn">Side Panel</button>
+        </section>
      
-        <div id="technicalSupport"style="display: none;">
+        <section id="technicalSupport"style="display: none;">
             <h3>Please contact us on technical@kudox.com</h3>
-        </div>
+        </section>
 
-        <div id="spreedSheet"style="display: none;" >
+        <section id="spreedSheet"style="display: none;" >
             <h3>Please contact us on spreedsheet@kudox.com</h3>
-        </div>
+        </section>
 
-
-        <div id="priceinfo" style="display: none;">
+        <section id="priceinfo" style="display: none;">
             <h3>Please contact us on sales@kudox.com</h3>
-        </div>
+        </section>
 
-        <div id="delivery" style="display: none;">
+        <section id="delivery" style="display: none;">
             <h3>Please contact us on sales@kudox.com</h3>
             <h4>Carrier may expect delays</h4>
-        </div>
+        </section>
 
-        <div id="question"style="display: none;">
+        <section id="question"style="display: none;">
             <h3>Type your question below:</h3>
             <input type="text" id="questiontext" placeholder="Write your question...">
             <button id="send-button2">Send</button>
-        </div>
-    
-    
+        </section>
     </div>
-    <div id="input" >
+    <section id="input" >
         <input type="text" id= 'chat-input' placeholder="Write a message...">
         <button id="send-button">Send</button>
-    </div>
-       
+    </section>
+</main>
    
 </body>
 <script src="chat.js"></script>

@@ -30,14 +30,11 @@ margin-bottom: 0;
      transform-origin: bottom right;
      transition: 1s;
      overflow:scroll;
-  
 }
 
 #chat-box-container.show{
   transform: scale(1);
-
 }
-
 #messages_box{
     position:fixed;
     right: 20px;
@@ -48,7 +45,6 @@ margin-bottom: 0;
     height: 400px;
     display: grid; 
     left: 2cm;
-
 }
 #logo{
     background: pink;
@@ -56,8 +52,8 @@ margin-bottom: 0;
     border-top-left-radius: 10%;
     max-width: 500;
     text-align: center;
-  }
-  #our-msg-inbox{
+}
+#our-msg-inbox{
     background-color: rgb(53, 231, 237);
     border-radius: 15px;
     float: left;
@@ -68,8 +64,7 @@ margin-bottom: 0;
   padding-bottom: 30px;
   padding-left: 20px;
   margin-bottom: 10px;
- 
-}
+ }
 #received-msg-inbox{
     background-color:rgb(246, 235, 142);
     border-radius: 15px;
@@ -99,45 +94,10 @@ margin-bottom: 0;
     top:0;
  
 }
-#primeirapergunta{
-    background-color: rgb(53, 231, 237);
-    border-radius: 15px;
-    float: left;
-    width: 5cm;
-    font-size: 12px;
-    padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  margin-bottom: 10px;
-  top:0;
-}
 
-.btn{
-    background-color: #007bff;
-    color: #fff;  
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 12px;
-    padding: 5px;
-    text-align: center;
-    width:100%;
-}
+#primeirapergunta,
 #segundaPerguntaSales,
-#segundaPerguntaSupport{
-    background-color: rgb(53, 231, 237);
-    border-radius: 15px;
-    float: left;
-    width: 5cm;
-    font-size: 12px;
-    padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  margin-bottom: 10px;
-}
-
-
+#segundaPerguntaSupport,
 #delivery,
 #warrantyClaim,
 #SpareParts,
@@ -156,7 +116,7 @@ margin-bottom: 0;
   padding-left: 20px;
   margin-bottom: 10px;
 }
-
+.btn,
 .btn1{
     background-color: #007bff;
     color: #fff;  
