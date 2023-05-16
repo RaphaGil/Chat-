@@ -27,7 +27,7 @@ button.addEventListener('click', (e) => {
 
 const buttons = document.querySelectorAll('.btn');
 
-for (let i = 0; i < buttons.length; i++) {
+for (i in buttons) {
   const buttonChat = buttons[i];
   buttonChat.addEventListener('click', (e) => {
     e.preventDefault();
@@ -36,44 +36,31 @@ for (let i = 0; i < buttons.length; i++) {
       case buttons[0]:
         const priceBoxContainer = document.getElementById('segundaPerguntaSales');
         priceBoxContainer.style.display = 'grid';
-
-    
-      
         break;
 
       case buttons[1]:
         const customerSelectSecond = document.getElementById('segundaPerguntaSupport');
         customerSelectSecond.style.display = 'grid';
- 
-
-        break;
+      break;
 
       case buttons[2]:
         const supportSelectSecond = document.getElementById('warrantyClaim');
         supportSelectSecond.style.display = 'grid';
-
-    
         break;
 
       case buttons[3]:
         const supportSelectThird = document.getElementById('SpareParts');
         supportSelectThird.style.display = 'grid';
-     
-
         break;
 
       case buttons[4]:
         const supportSelectFourth = document.getElementById('technicalSupport');
         supportSelectFourth.style.display = 'grid';
-  
-
-        break;
+      break;
 
       case buttons[5]:
         const supportSelectFifth = document.getElementById('spreedSheet');
         supportSelectFifth.style.display = 'grid';
-
-
         break;
 
       default:
@@ -83,7 +70,6 @@ for (let i = 0; i < buttons.length; i++) {
     scrollBottom();
   });
 }
-
 
 
 function scrollBottom() {
